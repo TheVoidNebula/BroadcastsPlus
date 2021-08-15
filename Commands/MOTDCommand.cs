@@ -14,7 +14,7 @@ namespace BroadcastsPlus.Commands
         Description = "Manage the MOTD.",
         Permission = "bp.motd",
         Platforms = new[] { Platform.RemoteAdmin },
-        Usage = ".motd <set/enable/disable/force> <Duration> <Text>"
+        Usage = "motd <set/enable/disable/force> <Duration> <Text>"
         )]
     public class MOTDCommand : ISynapseCommand
     {
