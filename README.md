@@ -1,0 +1,64 @@
+# BroadcastsPlus
+Adds Broadcasts which play over time.
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/reading-6th-grade-level.svg)](https://forthebadge.com)
+
+## Features
+* MOTD that is shown on a player join for the player
+* Broadcasts in a given intervall
+* C.A.S.S.I.E Announcements in a given intervall
+* Manage the Broadcasts/C.A.S.S.I.E Announcements ingame
+
+## Installation
+1. [Install Synapse](https://github.com/SynapseSL/Synapse/wiki#hosting-guides)
+2. Place the BroadcastsPlus.dll file that you can download [here](https://github.com/TheVoidNebula/BroadcastsPlus/releases) in your plugin directory
+3. Restart/Start your server.
+
+
+## Config
+Name  | Type | Default | Description
+------------ | ------------ | ------------- | ------------ 
+`IsEnabled` | Boolean | true | Is this plugin enabled?
+`EnableBroadcasts` | Boolean | true | Should Broadcasts be posted in a given intervall?
+`BroadcastsIntervall` | ushort | 60 | The intervall in which the Broadcasts are posted
+`EnableCassieAnnouncements` | Boolean | false | Should C.A.S.S.I.E announcements be posted in a given intervall?
+`CassieAnnouncementsIntervall` | ushort | 180 | The intervall in which the C.A.S.S.I.E announcements are posted
+`MOTD` | MOTD | IsEnabled = true, Duration = 10, Text = "<color=green>Welcome to our Server!</color>\nWe are currently looking for staff!" | The intervall in which the C.A.S.S.I.E announcements are posted
+`Broadcasts` | List | ID = 1, Duration = 10, Text = "<b>This is a Test Broadcast!</b>" | The Broadcasts
+`CassieAnnouncements` | List | ID = 1, Text = "based" | The C.A.S.S.I.E Announcements
+`IsEnabled` | Boolean | true | Is this plugin enabled?
+
+## Config.syml
+```yml
+[BroadcastsPlus]
+{
+broadcasts:
+- iD: 1
+  duration: 10
+  text: <b>This is a Test Broadcast!</b>
+- iD: 2
+  duration: 10
+  text: <b>Remember to read our rules!</b>
+cassieAnnouncements:
+- iD: 1
+  text: based
+# Should this plugin be enabled?
+isEnabled: true
+# Should Broadcasts be posted in a given intervall?
+enableBroadcasts: true
+# The intervall in which the Broadcasts are posted
+broadcastsIntervall: 60
+# Should C.A.S.S.I.E announcements be posted in a given intervall?
+enableCassieAnnouncements: true
+# The intervall in which the C.A.S.S.I.E announcements are posted
+cassieAnnouncementsIntervall: 180
+# The intervall in which the C.A.S.S.I.E announcements are posted
+mOTD:
+  isEnabled: true
+  duration: 10
+  text: >-
+    <color=green>Welcome to our Server!</color>
+
+    We are currently looking for staff!
+}
+```
