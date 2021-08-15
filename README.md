@@ -14,6 +14,25 @@ Adds Broadcasts which play over time.
 2. Place the BroadcastsPlus.dll file that you can download [here](https://github.com/TheVoidNebula/BroadcastsPlus/releases) in your plugin directory
 3. Restart/Start your server.
 
+## Commands
+Command  | Usage | Aliases | Permission | Description
+------------ | ------------ | ------------- | ------------ | ------------ 
+`broadcastplus` | `broadcastplus` | `bp` | `bd.broadcasts` | Show all Broadcasts commands
+`broadcastplus` | `broadcastplus` `list` | `bp` | `bd.broadcasts.list` | Show all available Broadcasts with their IDs, Durations and Text
+`broadcastplus` | `broadcastplus` `add` `<ID as number>` `<Duration as number>` `<Text>` | `bp` | `bd.broadcasts.list` | Add a new Broadcast directly into the Configs
+`broadcastplus` | `broadcastplus` `remove` `<ID as number>` | `bp` | `bd.broadcasts.remove` | Remove a already existing Broadcast via the ID
+`broadcastplus` | `broadcastplus` `force` `<ID as number>` | `bp` | `bd.broadcasts.force` | Show a Broadcast to everyone via the ID
+`broadcastplus` | `broadcastplus` `reset`  | `bp` | `bd.broadcasts.reset` | Reset the whole BroadcastsPlus Config
+`motd` | `motd` `set`  | `bp` | `bd.motd` | Show all MOTD commands
+`motd` | `motd` `set`  | `bp` | `bd.motd.set` | Set the MOTD ingame
+`motd` | `motd` `enable/on`  | `bp` | `bd.motd.enable` | Enables the MOTD
+`motd` | `motd` `disable/off`  | `bp` | `bd.motd.enable` | Disables the MOTD
+`motd` | `motd` `force`  | `bp` | `bd.motd.enable` | Shows the MOTD to everyone
+`cassieannouncement` | `cassieannouncement` | `ca`, `announcements` | `bd.announcements` | Show all C.A.S.S.I.E Announcement commands
+`cassieannouncement` | `cassieannouncement` `list` | `ca`, `announcements` | `bd.announcements.list` | Show all available  C.A.S.S.I.E Announcements with their IDs, Durations and Text
+`cassieannouncement` | `cassieannouncement` `add` `<ID as number>` `<Text>` | `ca`, `announcements` | `bd.announcements.add` | Add a new C.A.S.S.I.E Announcement directly into the Configs
+`cassieannouncement` | `cassieannouncement` `remove` `<ID as number>` | `ca`, `announcements` | `bd.announcements.remove` | Remove a already existing C.A.S.S.I.E Announcement via the ID
+`cassieannouncement` | `cassieannouncement` `force` `<ID as number>` | `ca`, `announcements` | `bd.announcements.force` | Show a C.A.S.S.I.E Announcement to everyone via the ID
 
 ## Config
 Name  | Type | Default | Description
