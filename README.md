@@ -9,6 +9,10 @@ Adds Broadcasts which play over time.
 * C.A.S.S.I.E Announcements in a given intervall
 * Manage the Broadcasts/C.A.S.S.I.E Announcements ingame
 
+## Showcase
+
+![The Broadcasts with their IDs](/assets/example.png)
+
 ## Installation
 1. [Install Synapse](https://github.com/SynapseSL/Synapse/wiki#hosting-guides)
 2. Place the BroadcastsPlus.dll file that you can download [here](https://github.com/TheVoidNebula/BroadcastsPlus/releases) in your plugin directory
